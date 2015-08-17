@@ -4,7 +4,6 @@ There are other python packages on github (and elsewhere) for scraping data from
 ## Usage
 ```
 import pyfitbit
-import pandas as pd
 
 my_data = get_fitbit_data('gimmemy@data.plz', 'andplzdonotsueme', '2015-08-14', '2015-08-17')
 
