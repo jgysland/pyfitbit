@@ -1,5 +1,5 @@
 # pyfitbit
-There are other python packages on github (and elsewhere) for scraping data from fitbit.com, but I had mixed results, especially with "intra-day" data, and especially on heart-rate data. So I wrote this. YMMV.
+There are other python packages on github (and elsewhere) for scraping data from fitbit.com, but I had mixed results, especially with "intra-day" data, and especially on heart-rate data. So I wrote this. Data is returned as a `DatetimeIndex`-ed pandas `DataFrame` with 15-minute intervals (notably, at least on my Charge HR, heart rate observations are available at 5-minute intervals, but everything else is only at 15-minute intervals, so it returns the median bpm for the three 5-minute interval observations). YMMV.
 
 ## Usage
 ```
